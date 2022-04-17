@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Fitness</title>
+</head>
+
+<!-- i.e to include content supplied in separate css file too -->
+<link rel="stylesheet" href="css/style.css">
+<style>
+ /* CSS Reset */
+ body{
+     font-family: 'Baloo Bhai',cursive;
+     color:white;
+     margin:0px;
+     padding: 00px;
+     background:url('img/bg.png.jpg');
+     /* height:4544px; */
+ }
+
+ .left{
+     display: inline-block;
+     /* border: 2px solid red; */
+     position: absolute;
+    left: 34px;
+    top:20px;
+ }
+ .left img{
+     padding-left: 42px;
+     width: 70px;
+     filter:invert(100);
+     /* invert function in css is used to convert white image to black and vice versa */
+ }
+ .left div{
+     line-height: 19px;
+     font-size: 26px;
+     text-align: left;
+ }
+ .mid{
+     /* my way of doing it */
+    /* display: inline-block;
+     border: 2px solid red;
+     position: absolute;
+    left: 653px;
+    top:22px; */
+     display:block;
+     width:36%;
+
+    margin:20px auto;
+    /* border: 2px solid green; */
+ }
+ .right{
+    position: absolute;
+    right: 34px;
+    top:34px;
+    display: inline-block;
+    /* border: 2px solid yellow; */
+ }
+ .navbar{
+     display:inline-block;
+ }
+ .navbar li{
+     display: inline-block;
+     font-size: 18px;
+    
+ }
+ .navbar li a{
+     color:white;
+     text-decoration: none;
+     padding: 34px 13px;
+ }
+ .navbar li a:hover,.navbar li a.active{
+     text-decoration: underline;
+     color:grey;
+ }
+ .btn{
+     margin:0px 9px;
+     color:white;
+     background-color:black;
+     padding:4px 14px;
+     border-radius: 10px;
+     font-size: 15px;
+     cursor:pointer;
+ }
+ .btn:hover{
+     background-color: gray;
+ }
+ .container{
+     border: 2px solid white;
+     margin:128px 52px;
+     padding:55px 55px;
+     width:33%;
+     border-radius: 8px;
+ }
+ .form-group input{
+           font-family: cursive;
+           text-align: center;
+           display: block;
+           width: 308px;
+           padding: 6px;
+           border: 2px solid black;
+           margin:8px auto;
+           font-size: 25px;
+           border-radius: 15px;
+ }
+ .container button{
+     display: block;
+     width:83%;
+     margin: 21px auto;
+     font-size: 20px;
+     background-color: rgb(210, 210, 104);
+     color: green;
+ }
+ .container h1{
+     text-align: center;
+ }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+       <div class="left">
+       <img src="img/gym.png.png" alt="">
+       <div>Aman Fitness</div>
+       </div>
+      
+       <div class="mid">
+<!-- I am mid -->
+ <!-- mid box for navbar -->
+ <ul class="navbar">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Fitness Calculator</a></li>
+    <li><a href="#">Contact Us</a></li>
+
+
+ </ul>
+       </div>
+       <!-- right box for buttons -->
+       <div class="right">
+    <button class="btn">Call Us Now</button>
+    <button class="btn">Email Us </button>
+       </div>
+
+    </header>
+    <div class="container">
+        <h1>
+            Join the best gym of Aligarh 
+        </h1>
+        <!-- aisa assume kiyaa jaa rahaa hai ki saara data noaction.php mein jaayegaa -->
+        <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Locality">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Phone Number">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Email Id">
+        </div>
+        <!-- class btn styled already -->
+        <button class="btn">Submit</button>
+        </form>
+
+    </div>
+</body>
+</html>
